@@ -1,9 +1,10 @@
 import React from "react";
 import "src/styles/index.scss";
+import ".component/stylo.css";
 
 //include images into your bundle
 
-import { Square } from "./square.js";
+import { game } from "./game.js";
 //create your first component
 export function Home() {
 	return (
