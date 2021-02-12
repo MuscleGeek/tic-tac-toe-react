@@ -1,10 +1,8 @@
 import React from "react";
-
 import Square from "./square.js";
-import "src/js/component/stylo.css";
+import PropTypes from "prop-types";
 
-export const Board = props => {
-	console.log(props);
+export default function Board(props) {
 	const renderSquare = i => {
 		return (
 			<Square value={props.squares[i]} onClick={() => props.onClick(i)} />
@@ -29,4 +27,9 @@ export const Board = props => {
 			</div>
 		</div>
 	);
+}
+
+Board.propTypes = {
+	squares: PropTypes.number,
+	onClick: PropTypes.func
 };

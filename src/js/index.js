@@ -1,7 +1,6 @@
 //import react into the bundle
 import React from "react";
 import ReactDOM from "react-dom";
-import ".component/stylo.css";
 
 //include bootstrap npm library into the bundle
 import "bootstrap";

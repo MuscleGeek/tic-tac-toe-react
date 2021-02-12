@@ -1,10 +1,15 @@
 import React from "react";
-import "src/js/component/stylo.css";
+import PropTypes from "prop-types";
 
-export function Square(props) {
+export default function Square(props) {
 	return (
 		<button className="square" onClick={props.onClick}>
 			{props.value}
 		</button>
 	);
 }
+
+Square.propTypes = {
+	onClick: PropTypes.func,
+	value: PropTypes.number
+};
