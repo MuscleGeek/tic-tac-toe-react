@@ -33,3 +33,5 @@ Board.propTypes = {
 	squares: PropTypes.number,
 	onClick: PropTypes.func
 };
+
+/*calculating winner not working*/
