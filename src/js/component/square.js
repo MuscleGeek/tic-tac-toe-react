@@ -1,15 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default function Square(props) {
+function Square(props) {
 	return (
-		<button className="square" onClick={props.onClick}>
+		<button className="square" onClick={() => props.onClick()}>
 			{props.value}
 		</button>
 	);
 }
 
 Square.propTypes = {
-	onClick: PropTypes.func,
-	value: PropTypes.number
+	onClick: PropTypes.any,
+	value: PropTypes.any
 };
+export default Square;

@@ -30,8 +30,8 @@ export default function Board(props) {
 }
 
 Board.propTypes = {
-	squares: PropTypes.number,
-	onClick: PropTypes.func
+	squares: PropTypes.any,
+	onClick: PropTypes.any
 };
 
 /*calculating winner not working*/
